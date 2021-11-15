@@ -1,0 +1,7 @@
+2021-11-12 12:11:778 INFO  WaitHelper:21 - waiting for element visibilityOf..
+2021-11-12 12:11:858 INFO  WaitHelper:24 - element is visible..
+2021-11-12 12:11:986 INFO  WaitHelper:21 - waiting for element visibilityOf..
+2021-11-12 12:11:24 INFO  WaitHelper:24 - element is visible..
+2021-11-12 12:11:282 INFO  WaitHelper:21 - waiting for element visibilityOf..
+2021-11-12 12:11:322 INFO  WaitHelper:24 - element is visible..
+2021-11-12 13:11:105 INFO  ServiceHooks:43 - Login into the application with valid credentials is pass
