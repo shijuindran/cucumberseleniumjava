@@ -1,7 +1,7 @@
 Feature: Flipkart user logIn using valid credentials
 
   Scenario: Login into the application with valid credentials
-  	Given User am on the Login page URL "https://www.flipkart.com/"
+  	Given User am on the Login page URL "https://www.flipkart.com"
     Then User enter username as "9946694430"
     And User enter password as "mangobite@777"
     And User click on login button
