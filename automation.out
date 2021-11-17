@@ -1,7 +1,13 @@
-2021-11-15 17:11:750 INFO  WaitHelper:21 - waiting for element visibilityOf..
-2021-11-15 17:11:818 INFO  WaitHelper:24 - element is visible..
-2021-11-15 17:11:929 INFO  WaitHelper:21 - waiting for element visibilityOf..
-2021-11-15 17:11:976 INFO  WaitHelper:24 - element is visible..
-2021-11-15 17:11:216 INFO  WaitHelper:21 - waiting for element visibilityOf..
-2021-11-15 17:11:256 INFO  WaitHelper:24 - element is visible..
-2021-11-15 17:11:146 INFO  ServiceHooks:43 - LogIn into the application and buy one product is pass
+2021-11-17 15:11:802 INFO  WaitHelper:21 - waiting for element visibilityOf..
+2021-11-17 15:11:894 INFO  WaitHelper:24 - element is visible..
+2021-11-17 15:11:294 INFO  WaitHelper:21 - waiting for element visibilityOf..
+2021-11-17 15:11:334 INFO  WaitHelper:24 - element is visible..
+2021-11-17 15:11:852 INFO  WaitHelper:21 - waiting for element visibilityOf..
+2021-11-17 15:11:454 INFO  WaitHelper:24 - element is visible..
+2021-11-17 15:11:577 INFO  WaitHelper:21 - waiting for element visibilityOf..
+2021-11-17 15:11:695 INFO  WaitHelper:24 - element is visible..
+2021-11-17 15:11:59 INFO  WaitHelper:21 - waiting for element visibilityOf..
+2021-11-17 15:11:138 INFO  WaitHelper:24 - element is visible..
+2021-11-17 15:11:869 INFO  WaitHelper:21 - waiting for element visibilityOf..
+2021-11-17 15:11:17 INFO  WaitHelper:24 - element is visible..
+2021-11-17 15:11:48 INFO  ServiceHooks:43 - Login into the application with valid credentials and adding items to cart and verifying both is pass

@@ -94,11 +94,13 @@ public class FlipkartLogInPage {
 	}
 	
 	public void addToCart() throws Throwable{
+		Thread.sleep(5000);
 		addToCart.click();
 	}
 	
-	public void searchingItemsFlipkart(String airpods) {
-		this.searchBox.sendKeys(airpods);
+	public void searchingItemsFlipkart(String items) {
+		searchBox.clear();
+		this.searchBox.sendKeys(items);
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {

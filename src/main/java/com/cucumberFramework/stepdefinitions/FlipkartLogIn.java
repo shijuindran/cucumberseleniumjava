@@ -5,6 +5,7 @@ import static org.testng.Assert.assertEquals;
 import java.util.ArrayList;
 
 import org.junit.runner.RunWith;
+import org.openqa.selenium.By;
 
 import com.cucumberFramework.helper.WaitHelper;
 import com.cucumberFramework.pageObjects.FlipkartLogInPage;
@@ -23,9 +24,10 @@ public class FlipkartLogIn extends TestBase {
 	FlipkartLogInPage flipkartLogIn = new FlipkartLogInPage(driver);
 	WaitHelper waitHelper = new WaitHelper(driver);
 
-	    @Given("^User am on the Login page URL \"([^\"]*)\"$")
+	    @Given("^User is on the Login page URL \"([^\"]*)\"$")
 	    public void user_am_on_the_login_page_url_something(String strArg) throws Throwable {
 	        driver.get(strArg);
+
 	        waitHelper.WaitForElement(flipkartLogIn.logIn, 60);
 	        
 	    }
@@ -38,6 +40,7 @@ public class FlipkartLogIn extends TestBase {
 	    
 	    @Then("^User enter username as \"([^\"]*)\"$")
 	    public void user_enter_username_as(String strArg1) throws Throwable {
+	    	driver.findElement(By.xpath("//a[text()='Login']")).click();
 	    	flipkartLogIn.enterUserNameFlipkart(strArg1);
 	    	waitHelper.WaitForElement(flipkartLogIn.password, 60);
 	    }
@@ -47,20 +50,20 @@ public class FlipkartLogIn extends TestBase {
 	        flipkartLogIn.enterPasswordFlipkart(strArg1);
 	    }
 
-	    @And("^User click on login button$")
-	    public void user_click_on_login_button() throws Throwable {
+	    @And("^User click on submit button$")
+	    public void user_click_on_submit_button() throws Throwable {
 	        flipkartLogIn.clickSubmitButtonFlipkart();
 	        Thread.sleep(4000);
 	    }
-	    @Then("^User searched the item \"([^\"]*)\"$")
+	    @When("^User searched the item \"([^\"]*)\"$")
 	    public void user_searched_the_item(String arg1) throws Throwable {
-	    	waitHelper.WaitForElement(flipkartLogIn.searchButton, 60);
+	    	Thread.sleep(5000);
 	    	flipkartLogIn.searchingItemsFlipkart(arg1);
+	    	
 	    }
 
 	    @Then("^User added that item to Cart$")
 	    public void user_added_that_item_to_Cart() throws Throwable {
-	        // Write code here that turns the phrase above into concrete actions
 	    	Thread.sleep(5000);
 	    	flipkartLogIn.addApplAirPodToTheCart();
 	    	ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
@@ -72,10 +75,10 @@ public class FlipkartLogIn extends TestBase {
 		    driver.navigate().refresh();
 	    }
 
-	    @Then("^User verified whther that item is added to cart or not$")
-	    public void user_verified_whther_that_item_is_added_to_cart_or_not() throws Throwable {
+	    @Then("^User verified whether that item is added to cart or not$")
+	    public void user_verified_whether_that_item_is_added_to_cart_or_not() throws Throwable {
 	   
-	    	 flipkartLogIn.cartVerification("1");
+	    	 flipkartLogIn.cartVerification("2");
 	    	
 	    	Thread.sleep(10000);
 	    }
