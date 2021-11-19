@@ -70,6 +70,7 @@ public class FlipkartEndToEndTest extends TestBase {
 		driver.switchTo().window(tabs.get(2));
 		waitHelper.WaitForElement(flipkartLogIn.addToCart, 60);
 		flipkartLogIn.addToCart();
+		Thread.sleep(3000);
 
 		driver.switchTo().window(tabs.get(0));
 		driver.navigate().refresh();

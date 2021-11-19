@@ -26,7 +26,7 @@ public class FlipkartEndToEndTestPage {
 	@FindBy(xpath = "//div[text()='shiju']")
 	public WebElement loggedInUser;
 
-	@FindBy(xpath = "//a[text()='TP-Link Archer C20 750 MBPS Wireless Router']")
+	@FindBy(xpath = "//a[text()='TP-Link Archer C20 AC WiFi 750 MBPS Wireless Router']")
 	public WebElement itemToAdd;
 
 	@FindBy(xpath = "//span[text()='Place Order']")
