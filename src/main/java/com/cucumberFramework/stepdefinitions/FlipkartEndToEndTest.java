@@ -34,6 +34,7 @@ public class FlipkartEndToEndTest extends TestBase {
 
 	@Then("^User should see the name as logged in$")
 	public void user_should_see_the_name_as_logged_in() throws Throwable {
+		waitHelper.WaitForElement(flipkartEndToEndTest.loggedInUser, 60);
 		flipkartEndToEndTest.verifyLoggedUser();
 	}
 
